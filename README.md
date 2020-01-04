@@ -1,2 +1,2 @@
-# NodeJwtAuth
-Exemplo de autenticação JWT
+# start-api-node
+ Initial Structure of a NodeJS Project
