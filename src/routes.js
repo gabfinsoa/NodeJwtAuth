@@ -1,10 +1,12 @@
 import { Router } from 'express';
+import cors from 'cors';
 import UserController from './app/controllers/UserController';
 import authMiddleware from './app/middlewares/auth';
 import AuthController from './app/controllers/AuthController';
 
 const routes = Router();
 
+routes.use(cors());
 routes.get('/', (req, res) => res.json('JWT-NODE'));
 
 routes.post('/users', UserController.store);
